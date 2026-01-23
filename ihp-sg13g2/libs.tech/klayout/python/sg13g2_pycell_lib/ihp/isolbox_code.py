@@ -107,7 +107,7 @@ class isolbox(DloGen):
                                                Point(0, 0), Point(-nw_a, 0), Point(-nw_a, w-nw_a), Point(l-nw_a, w-nw_a),
                                                Point(l-nw_a, -nw_a), Point(-nw_a, -nw_a), Point(-nw_a, 0)]))
         
-        if diode_layer :
+        if diode_layer != 'nil':
             dbCreatePolygon(self, diode, PointList([Point(0, 0), Point(l-2*nw_a, 0), 
                                                     Point(l-2*nw_a, w-2*nw_a), Point(0, w-2*nw_a), 
                                                     Point(0, 0), Point(-nw_a, 0), 
